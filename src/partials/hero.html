@@ -1,188 +1,190 @@
-<section class="hero container" id="hero">
-  <h1 class="hero__title">ice cream made with passion</h1>
-  <ul class="hero__list-shop">
-    <li class="hero__item-shop">
-      <p class="hero__desc-shop">
-        <span class="hero__numb">16</span>
-        cafes
-      </p>
-    </li>
-    <li class="hero__item-shop">
-      <p class="hero__desc-shop">
-        <span class="hero__numb">23</span>
-        food trucks
-      </p>
-    </li>
-  </ul>
-  <ul class="hero__list-anchor">
-    <li class="hero__item-anchor">
-      <a class="hero__anchor-products" href="">Products</a>
-    </li>
-    <li class="hero__item-anchor">
-      <a class="hero__anchor-about" href="">How it’s made?</a>
-    </li>
-  </ul>
-  <!-- підключення картинки-точки в 3-х варіантів + webp -->
-  <picture>
-    <source
-      srcset="
-        ./images/desktop-hero/plate-ice.webp    1x,
-        ./images/desktop-hero/plate-ice@2x.webp 2x
-      "
-      type="image/webp"
-      media="(min-width: 1200px)"
-    />
-    <source
-      srcset="
-        ./images/desktop-hero/plate-ice.png    1x,
-        ./images/desktop-hero/plate-ice@2x.png 2x
-      "
-      type="image/png"
-      media="(min-width: 1200px)"
-    />
-    <source
-      srcset="
-        ./images/tablet-hero/plate-ice.webp    1x,
-        ./images/tablet-hero/plate-ice@2x.webp 2x
-      "
-      type="image/webp"
-      media="(min-width: 768px)"
-    />
-    <source
-      srcset="
-        ./images/tablet-hero/plate-ice.png    1x,
-        ./images/tablet-hero/plate-ice@2x.png 2x
-      "
-      type="image/png"
-      media="(min-width: 768px)"
-    />
-    <img
-      loading="lazy"
-      src="./images/tablet-hero/plate-ice.png"
-      alt="a lot of ice cream on a plate"
-    />
-  </picture>
+<section class="hero" id="hero">
+  <div class="container">
+    <h1 class="hero__title">ice cream made with passion</h1>
+    <ul class="hero__list-shop">
+      <li class="hero__item-shop">
+        <p class="hero__desc-shop">
+          <span class="hero__numb">16</span>
+          cafes
+        </p>
+      </li>
+      <li class="hero__item-shop">
+        <p class="hero__desc-shop">
+          <span class="hero__numb">23</span>
+          food trucks
+        </p>
+      </li>
+    </ul>
+    <ul class="hero__list-anchor">
+      <li class="hero__item-anchor">
+        <a class="hero__anchor-products" href="">Products</a>
+      </li>
+      <li class="hero__item-anchor">
+        <a class="hero__anchor-about" href="">How it’s made?</a>
+      </li>
+    </ul>
+    <!-- підключення картинки-точки в 3-х варіантів + webp -->
+    <picture>
+      <source
+        srcset="
+          ./images/desktop-hero/plate-ice.webp    1x,
+          ./images/desktop-hero/plate-ice@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/desktop-hero/plate-ice.png    1x,
+          ./images/desktop-hero/plate-ice@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/tablet-hero/plate-ice.webp    1x,
+          ./images/tablet-hero/plate-ice@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/tablet-hero/plate-ice.png    1x,
+          ./images/tablet-hero/plate-ice@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 768px)"
+      />
+      <img
+        loading="lazy"
+        src="./images/tablet-hero/plate-ice.png"
+        alt="a lot of ice cream on a plate"
+      />
+    </picture>
 
-  <p class="hero__desc">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et
-  </p>
-  <a class="hero__link-arrow" href="">
-    #
-    <svg width="40" height="16">
-      <use></use>
-    </svg>
-  </a>
-  <!-- підключення картинки-тарілка з морозивом в 3-х варіантів + webp(на моб версії буде display none) -->
-  <picture>
-    <source
-      srcset="
-        ./images/desktop-hero/point-hero.webp    1x,
-        ./images/desktop-hero/point-hero@2x.webp 2x
-      "
-      type="image/webp"
-      media="(min-width: 1200px)"
-    />
-    <source
-      srcset="
-        ./images/desktop-hero/point-hero.png    1x,
-        ./images/desktop-hero/point-hero@2x.png 2x
-      "
-      type="image/png"
-      media="(min-width: 1200px)"
-    />
-    <source
-      srcset="
-        ./images/tablet-hero/point-hero.webp    1x,
-        ./images/tablet-hero/point-hero@2x.webp 2x
-      "
-      type="image/webp"
-      media="(min-width: 768px)"
-    />
-    <source
-      srcset="
-        ./images/tablet-hero/point-hero.png    1x,
-        ./images/tablet-hero/point-hero@2x.png 2x
-      "
-      type="image/png"
-      media="(min-width: 768px)"
-    />
-    <source
-      srcset="
-        ./images/mobile-hero/hero-point.webp    1x,
-        ./images/mobile-hero/hero-point@2x.webp 2x
-      "
-      type="image/webp"
-      media="(min-width: 320px)"
-    />
-    <source
-      srcset="
-        ./images/mobile-hero/hero-point.png    1x,
-        ./images/mobile-hero/hero-point@2x.png 2x
-      "
-      type="image/png"
-      media="(min-width: 320px)"
-    />
-    <img
-      loading="lazy"
-      src="./images/mobile-hero/hero-point.png"
-      alt="many yellow dots"
-    />
-  </picture>
-  <!-- підключення картинки-велике морозиво + webp -->
-  <picture>
-    <source
-      srcset="
-        ./images/desktop-hero/ice-hero.webp    1x,
-        ./images/desktop-hero/ice-hero@2x.webp 2x
-      "
-      type="image/webp"
-      media="(min-width: 1200px)"
-    />
-    <source
-      srcset="
-        ./images/desktop-hero/ice-hero.png    1x,
-        ./images/desktop-hero/ice-hero@2x.png 2x
-      "
-      type="image/png"
-      media="(min-width: 1200px)"
-    />
-    <source
-      srcset="
-        ./images/tablet-hero/ice-hero.webp    1x,
-        ./images/tablet-hero/ice-hero@2x.webp 2x
-      "
-      type="image/webp"
-      media="(min-width: 768px)"
-    />
-    <source
-      srcset="
-        ./images/tablet-hero/ice-hero.png    1x,
-        ./images/tablet-hero/ice-hero@2x.png 2x
-      "
-      type="image/png"
-      media="(min-width: 768px)"
-    />
-    <source
-      srcset="
-        ./images/mobile-hero/hero-ice.webp    1x,
-        ./images/mobile-hero/hero-ice@2x.webp 2x
-      "
-      type="image/webp"
-      media="(min-width: 320px)"
-    />
-    <source
-      srcset="
-        ./images/mobile-hero/hero-ice.png    1x,
-        ./images/mobile-hero/hero-ice@2x.png 2x
-      "
-      type="image/png"
-      media="(min-width: 320px)"
-    />
-    <img
-      loading="lazy"
-      src="./images/mobile-hero/hero-ice.png"
-      alt="big ice cream cone"
-    />
-  </picture>
+    <p class="hero__desc">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+    </p>
+    <a class="hero__link-arrow" href="">
+      #
+      <svg width="40" height="16">
+        <use></use>
+      </svg>
+    </a>
+    <!-- підключення картинки-тарілка з морозивом в 3-х варіантів + webp(на моб версії буде display none) -->
+    <picture>
+      <source
+        srcset="
+          ./images/desktop-hero/point-hero.webp    1x,
+          ./images/desktop-hero/point-hero@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/desktop-hero/point-hero.png    1x,
+          ./images/desktop-hero/point-hero@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/tablet-hero/point-hero.webp    1x,
+          ./images/tablet-hero/point-hero@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/tablet-hero/point-hero.png    1x,
+          ./images/tablet-hero/point-hero@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/mobile-hero/hero-point.webp    1x,
+          ./images/mobile-hero/hero-point@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 320px)"
+      />
+      <source
+        srcset="
+          ./images/mobile-hero/hero-point.png    1x,
+          ./images/mobile-hero/hero-point@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 320px)"
+      />
+      <img
+        loading="lazy"
+        src="./images/mobile-hero/hero-point.png"
+        alt="many yellow dots"
+      />
+    </picture>
+    <!-- підключення картинки-велике морозиво + webp -->
+    <picture>
+      <source
+        srcset="
+          ./images/desktop-hero/ice-hero.webp    1x,
+          ./images/desktop-hero/ice-hero@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/desktop-hero/ice-hero.png    1x,
+          ./images/desktop-hero/ice-hero@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/tablet-hero/ice-hero.webp    1x,
+          ./images/tablet-hero/ice-hero@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/tablet-hero/ice-hero.png    1x,
+          ./images/tablet-hero/ice-hero@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/mobile-hero/hero-ice.webp    1x,
+          ./images/mobile-hero/hero-ice@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 320px)"
+      />
+      <source
+        srcset="
+          ./images/mobile-hero/hero-ice.png    1x,
+          ./images/mobile-hero/hero-ice@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 320px)"
+      />
+      <img
+        loading="lazy"
+        src="./images/mobile-hero/hero-ice.png"
+        alt="big ice cream cone"
+      />
+    </picture>
+  </div>
 </section>
