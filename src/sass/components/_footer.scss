@@ -1,6 +1,7 @@
 .footer {
   padding-top: 39px;
   padding-bottom: 62px;
+  background-color: var(--olive-color);
 
   @media screen and (min-width:768px) {
     padding-top: 40px;
@@ -11,8 +12,6 @@
     padding-top: 120px;
     padding-bottom: 11px;
   }
-
-  background-color: var(--olive-color);
 
   &__contacts {
     margin-bottom: 40px;
@@ -80,7 +79,6 @@
 
   &-small {
     margin-bottom: 16px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
@@ -101,7 +99,6 @@
 
   &-big {
     margin-bottom: 42px;
-
     font-size: 34px;
     line-height: 1.20;
     letter-spacing: 0.04em;
@@ -119,11 +116,9 @@
       letter-spacing: 0.06em;
     }
   }
-
 }
 
 .footer__text {
-
   text-align: right;
   color: var(--main-black-color);
   font-weight: 700;
@@ -163,7 +158,6 @@
   &-warn {
     padding-top: 16px;
     margin: 0 auto;
-
     width: 200px;
 
     text-align: center;
