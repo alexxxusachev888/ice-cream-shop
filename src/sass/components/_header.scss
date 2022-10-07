@@ -1,0 +1,42 @@
+.header__container {
+  background-color: #aec6a5;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header__menu-list {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.open-mobile-menu-btn {
+  display: block;
+  background: transparent;
+  border: none;
+  padding: 0;
+  &:hover .burger-icon,
+  &:focus .burger-icon {
+    fill: black;
+  }
+}
+
+.burger-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.open-modal-buy-btn {
+  //   display: none;
+  width: 150px;
+  height: 42px;
+}
+
+.arrow-icon {
+  width: 12px;
+  height: 12px;
+}
