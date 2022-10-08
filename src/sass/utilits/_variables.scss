@@ -1,42 +1,40 @@
 /* Main Colors*/
 :root {
   --main-black-color: #131313;
-  --main-white-color: #FCFCFC;
+  --main-white-color: #fcfcfc;
 
   /* Products Colors*/
-  --milkshakes-color: #D6936D;
-  --ice-coffee-color: #EFD478;
-  --ice-cream-color: #AEC6A5;
+  --milkshakes-color: #d6936d;
+  --ice-coffee-color: #efd478;
+  --ice-cream-color: #aec6a5;
 
   /*Contacts Colors*/
-  --address-color: #D6936D;
-  --working-time-color: #907E82;
-  --line-color: #E1E1E1;
+  --address-color: #d6936d;
+  --working-time-color: #907e82;
+  --line-color: #e1e1e1;
 
   /*Background and Accent Colors*/
-  --olive-color: #84A178;
-  --yello-color: #F8D24E;
+  --olive-color: #84a178;
+  --yello-color: #f8d24e;
 
   /*Modals*/
-  --calories-stroke-color: #9CBE8F;
-  --input-stroke-color: #84A178;
+  --calories-stroke-color: #9cbe8f;
+  --input-stroke-color: #84a178;
 
   /*Buttons*/
-  --btn-default-color: #F8D24E;
-  --btn-hover-focus-color: #0A8817;
-  --btn-disabled-color: #ABABAB;
+  --btn-default-color: #f8d24e;
+  --btn-hover-focus-color: #0a8817;
+  --btn-disabled-color: #ababab;
 
   /*Footer Colors*/
-  --all-rights-reserved-color: #7A7A7A;
+  --all-rights-reserved-color: #7a7a7a;
 
   /*Fonts*/
 
-  --montserrat: 'Montserrat',
-    sans-serif;
-  --Seymour: 'Seymour One',
-    sans-serif;
-  --inter: 'Inter',
-    sans-serif;
-  --roboto: 'Roboto',
-    sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --Seymour: 'Seymour One', sans-serif;
+  --inter: 'Inter', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+
+  --duration-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
