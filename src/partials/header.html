@@ -2,7 +2,7 @@
   <div class="header__container container">
     <nav class="header__navigation">
       <a class="header__logo link" href="./index.html"
-        ><img src="./images/logo_desktop.png" alt="logo image"
+        ><img class="logo" src="./images/logo_desktop.png" alt="logo image"
       /></a>
       <ul class="header__menu-list list">
         <li class="header__menu-item">
@@ -26,21 +26,24 @@
       </svg>
     </button>
 
-    <button type="button" class="open-modal-buy-btn">
+    <button type="button" class="header__open-modal-buy-btn open-modal-buy-btn">
       Buy now
       <svg class="arrow-icon">
         <use href="./images/svg-sprite.svg#icon-ahead-icon"></use>
       </svg>
     </button>
   </div>
+
+  <!-- mobile menu -->
+
   <div class="mobile-menu" data-menu>
     <div class="container mobile-menu__container">
       <button type="button" class="mobile-menu__close-btn" data-menu-close>
-        <svg class="icon-cros" width="18" height="18">
+        <svg class="icon-cros">
           <use href="./images/svg-sprite.svg#icon-close-icon"></use>
         </svg>
       </button>
-      <a class="header__logo link" href="./index.html"
+      <a class="mobile-menu__logo link" href="./index.html"
         ><img src="./images/logo_desktop.png" alt="logo image"
       /></a>
       <ul class="mobile-menu__list list">
@@ -57,6 +60,15 @@
           <a class="mobile-menu__list-link links" href="./">Contact</a>
         </li>
       </ul>
+      <button
+        type="button"
+        class="open-modal-buy-btn mobile-menu__open-modal-buy-btn"
+      >
+        Buy now
+        <svg class="arrow-icon">
+          <use href="./images/svg-sprite.svg#icon-ahead-icon"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
