@@ -1,34 +1,73 @@
-.customer-reviews__box-review {
-    background: var(--olive-color);
-    padding: 20px;
-    border-radius: 4px;
-    text-align: center;
-    border: 1px solid #ececec;
+.customer-reviews {
+    &__img {
+        width: 85px;
+        height: 85px;
+        margin: 0 auto 32px;
+    }
 
+    &__box-review {
+        background: var(--olive-color);
+        padding: 34px 39px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__review {
+        font-size: 12px;
+        line-height: 2.55;
+        color: var(--main-white-color);
+
+    }
+
+    &__name {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.86;
+        color: var(--main-black-color);
+        margin-bottom: 14px;
+    }
 }
 
-.customer-reviews__review {
-    font-size: 12px;
-    line-height: 2.55;
-    color: var(--main-white-color);
+@media screen and (min-width:768px) {
+    .customer-reviews {
+        &__img {
+            margin-bottom: 28px;
+        }
+
+        &__box-review {
+            border-radius: 24px;
+            padding: 29px 80px;
+            margin-bottom: 32px;
+        }
+
+        &__review {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.86;
+            letter-spacing: 0.04em;
+        }
+
+        &__name {
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+    }
 }
 
-.customer-reviews__name {
-    margin: -17px auto 0;
-    display: table;
-    width: auto;
-    background: #393939;
-    padding: 9px 35px;
-    border-radius: 12px;
-    text-align: center;
-    color: var(--main-black-color);
-    text-decoration: none;
-    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
-}
+@media screen and (min-width:1200px) {
+    .customer-reviews {
+        &__box-review {
+            width: 968px;
+            margin: 0 auto 32px;
+            padding: 39px 109px 47px;
+        }
 
-.customer-reviews__img {
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    margin: 0 auto 32px;
+        &__review {
+            font-size: 16px;
+        }
+    }
 }
