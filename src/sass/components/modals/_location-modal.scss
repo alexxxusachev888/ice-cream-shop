@@ -7,9 +7,8 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity var(--duration-cubic) var(--duration-cubic);
+    transition: opacity var(--duration-cubic);
     overflow-y: scroll;
-  
     padding: 94px 12px;
   
     &.is-hidden {
@@ -27,12 +26,9 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border: 2px solid #f8d24e;
     border-radius: 10px;
-    transition: transform var(--duration-cubic) var(--duration-cubic);
-    transform: translate(0%, 0%) scale(1);
+    transition: transform var(--duration-cubic);
+ 
   
-    .backdrop.is-hidden & {
-      transform: translate(0%, 0%) scale(1.1);
-    }
   }
   
   .modal-location__button {
@@ -42,15 +38,11 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    transition: transform var(--duration-cubic) var(--duration-cubic);
+    transition: transform var(--duration-cubic);
   
-    &__icon {
-      transform: scale(1);
-    }
   
     &:hover,
     &:focus {
-      transform: scale(1.7);
       fill: var(--yello-color);
     }
   }
@@ -116,11 +108,10 @@
       padding-left: 60px;
       padding-right: 60px;
       padding-bottom: 32px;
-  
-      transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%);
   
       .backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(1.1);
+        transform: translate(-50%, -50%);
       }
     }
   
