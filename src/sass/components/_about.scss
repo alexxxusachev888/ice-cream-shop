@@ -241,3 +241,36 @@
       margin-bottom: 0;
     }
 }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  // justify-content: center;
+  height: 42px;
+  padding: 0px 34px;
+  // margin: 0 auto 10px;
+  border: 2px solid var(--btn-default-color);
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: var(--main-black-color);
+  background: var(--btn-default-color);
+
+  &:hover,
+  &:focus {
+    background: var(--btn-hover-focus-color);
+    border: 2px solid var(--btn-hover-focus-color);
+  }
+
+  &:focus {
+    color: var(--main-white-color);
+  }
+
+  &:disabled {
+    background: var(--btn-disabled-color);
+    border: 2px solid var(--btn-disabled-color);
+  }
+}
