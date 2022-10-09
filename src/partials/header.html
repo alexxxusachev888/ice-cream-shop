@@ -2,20 +2,70 @@
   <div class="header__container container">
     <nav class="header__navigation">
       <a class="header__logo link" href="./index.html"
-        ><img class="logo" src="./images/logo_desktop.png" alt="logo image"
-      /></a>
+        ><picture>
+          <source
+            srcset="
+              ./images/logo/webp/logo-desktop.webp    1x,
+              ./images/logo/webp/logo-desktop@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-desktop.png    1x,
+              ./images/logo/logo-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/logo/webp/logo-tablet.webp    1x,
+              ./images/logo/webp/logo-tablet@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-tablet.png    1x,
+              ./images/logo/logo-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/logo/webp/logo-mobile.webp    1x,
+              ./images/logo/webp/logo-mobile@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-mobile.png    1x,
+              ./images/logo/logo-mobile@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/logo/logo-mobile.png"
+            alt="Product Designer portrait"
+          />
+        </picture>
+      </a>
       <ul class="header__menu-list list">
         <li class="header__menu-item">
-          <a class="header__menu-link link" href="./">Home</a>
+          <a class="header__menu-link link" href="#hero">Home</a>
         </li>
         <li class="header__menu-item">
-          <a class="header__menu-link link" href="./">How it’s made?</a>
+          <a class="header__menu-link link" href="#about">How it’s made?</a>
         </li>
         <li class="header__menu-item">
-          <a class="header__menu-link link" href="./">Our products</a>
+          <a class="header__menu-link link" href="#products">Our products</a>
         </li>
         <li class="header__menu-item">
-          <a class="header__menu-link link" href="./">Contact</a>
+          <a class="header__menu-link link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -26,9 +76,9 @@
       </svg>
     </button>
 
-    <button type="button" class="header__open-modal-buy-btn open-modal-buy-btn">
-      Buy now
-      <svg class="arrow-icon">
+    <button type="button" class="button header__open-modal-buy-btn button--buy">
+      <span class="button__text">Buy now</span
+      ><svg width="12" height="16" class="button__icon">
         <use href="./images/svg-sprite.svg#icon-ahead-icon"></use>
       </svg>
     </button>
@@ -44,28 +94,86 @@
         </svg>
       </button>
       <a class="mobile-menu__logo link" href="./index.html"
-        ><img src="./images/logo_desktop.png" alt="logo image"
-      /></a>
+        ><picture>
+          <source
+            srcset="
+              ./images/logo/webp/logo-desktop.webp    1x,
+              ./images/logo/webp/logo-desktop@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-desktop.png    1x,
+              ./images/logo/logo-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/logo/webp/logo-tablet.webp    1x,
+              ./images/logo/webp/logo-tablet@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-tablet.png    1x,
+              ./images/logo/logo-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/logo/webp/logo-mobile.webp    1x,
+              ./images/logo/webp/logo-mobile@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-mobile.png    1x,
+              ./images/logo/logo-mobile@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/logo/logo-mobile.png"
+            alt="Product Designer portrait"
+          />
+        </picture>
+      </a>
       <ul class="mobile-menu__list list">
         <li class="mobile-menu__list-item">
-          <a class="mobile-menu__list-link links" href="./">Home</a>
+          <a class="mobile-menu__list-link links" href="./index.html#hero"
+            >Home</a
+          >
         </li>
         <li class="mobile-menu__list-item">
-          <a class="mobile-menu__list-link links" href="./">How it’s made?</a>
+          <a class="mobile-menu__list-link links" href="./index.html#about"
+            >How it’s made?</a
+          >
         </li>
         <li class="mobile-menu__list-item">
-          <a class="mobile-menu__list-link links" href="./">Our products</a>
+          <a class="mobile-menu__list-link links" href="./index.html#products"
+            >Our products</a
+          >
         </li>
         <li class="mobile-menu__list-item">
-          <a class="mobile-menu__list-link links" href="./">Contact</a>
+          <a class="mobile-menu__list-link links" href="./index.html#contact"
+            >Contact</a
+          >
         </li>
       </ul>
       <button
         type="button"
-        class="open-modal-buy-btn mobile-menu__open-modal-buy-btn"
+        class="button mobile-menu__open-modal-buy-btn button--buy"
       >
-        Buy now
-        <svg class="arrow-icon">
+        <span class="button__text">Buy now</span
+        ><svg width="12" height="16" class="button__icon">
           <use href="./images/svg-sprite.svg#icon-ahead-icon"></use>
         </svg>
       </button>
