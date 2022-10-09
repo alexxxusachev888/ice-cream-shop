@@ -94,51 +94,6 @@
   }
 }
 
-// background-image: linear-gradient(
-//       330deg,
-//       hsl(62deg 65% 46%) 34%,
-//       hsl(59deg 69% 47%) 39%,
-//       hsl(57deg 73% 49%) 43%,
-//       hsl(56deg 79% 51%) 48%,
-//       hsl(53deg 79% 55%) 52%,
-//       hsl(49deg 69% 58%) 57%,
-//       hsl(43deg 59% 60%) 61%,
-//       hsl(33deg 48% 62%) 66%,
-//       hsl(344deg 32% 60%) 77%,
-//       hsl(319deg 34% 52%) 100%
-//     );
-//     background-clip: text;
-//     background-repeat: repeat-x;
-//     background-size: 200% 200%;
-//     animation: gradientTitle 6s linear infinite;
-
-// @keyframes gradientTitle {
-//   0% {
-//     background-position: 0%;
-//   }
-//   30% {
-//     background-position: 30%;
-//   }
-//   40% {
-//     background-position: 50%;
-//   }
-//   60% {
-//     background-position: 80%;
-//   }
-//   70% {
-//     background-position: 100%;
-//   }
-//   80% {
-//     background-position: 70%;
-//   }
-//   90% {
-//     background-position: 50%;
-//   }
-//   100% {
-//     background-position: 0%;
-//   }
-// }
-
 .hero__list-shop {
   display: none;
   @media screen and (min-width: 768px) {
@@ -202,6 +157,7 @@
   @media screen and (min-width: 1200px) {
     margin-bottom: 42px;
     gap: 12px;
+    align-items: center;
   }
 }
 
