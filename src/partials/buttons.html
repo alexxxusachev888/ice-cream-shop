@@ -12,14 +12,22 @@
 
   <button type="button" class="button button--how">How it’s made?</button>
 
-  <button type="button" class="button button--location">
+  <button
+    type="button"
+    class="button button--location"
+    data-modal-location-open
+  >
     <span class="button__text">Our Locations</span
     ><svg width="12" height="12" class="button__icon">
       <use href="./images/svg-sprite.svg#icon-ahead-icon"></use>
     </svg>
   </button>
 
-  <button type="button" class="button button--franchise">
+  <button
+    type="button"
+    class="button button--franchise"
+    data-modal-franchise-open
+  >
     <span class="button__text">Franchise</span
     ><svg width="12" height="12" class="button__icon">
       <use href="./images/svg-sprite.svg#icon-ahead-icon"></use>
@@ -32,4 +40,9 @@
       <use href="./images/svg-sprite.svg#icon-ahead-icon"></use>
     </svg>
   </button>
+
+  <ul>
+    <li><a href="#" class="button button--products">Products</a></li>
+    <li><a href="#" class="button button--how">How it’s made?</a></li>
+  </ul>
 </div>
