@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding-top: 60px;
+  padding-top: 110px;
   padding-bottom: 240px;
   background-color: var(--olive-color);
   background-image: url(../images/mobile-hero/hero-point.png);
@@ -16,7 +16,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 38px;
+    padding-top: 104px;
     padding-bottom: 13px;
     background-image: url(../images/tablet-hero/point-hero.png);
     background-size: 767px 67px;
@@ -30,7 +30,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 45px;
+    padding-top: 118px;
     padding-bottom: 65px;
     background-image: url(../images/desktop-hero/point-hero.png);
     background-size: 1200px 384px;
@@ -93,6 +93,51 @@
     }
   }
 }
+
+// background-image: linear-gradient(
+//       330deg,
+//       hsl(62deg 65% 46%) 34%,
+//       hsl(59deg 69% 47%) 39%,
+//       hsl(57deg 73% 49%) 43%,
+//       hsl(56deg 79% 51%) 48%,
+//       hsl(53deg 79% 55%) 52%,
+//       hsl(49deg 69% 58%) 57%,
+//       hsl(43deg 59% 60%) 61%,
+//       hsl(33deg 48% 62%) 66%,
+//       hsl(344deg 32% 60%) 77%,
+//       hsl(319deg 34% 52%) 100%
+//     );
+//     background-clip: text;
+//     background-repeat: repeat-x;
+//     background-size: 200% 200%;
+//     animation: gradientTitle 6s linear infinite;
+
+// @keyframes gradientTitle {
+//   0% {
+//     background-position: 0%;
+//   }
+//   30% {
+//     background-position: 30%;
+//   }
+//   40% {
+//     background-position: 50%;
+//   }
+//   60% {
+//     background-position: 80%;
+//   }
+//   70% {
+//     background-position: 100%;
+//   }
+//   80% {
+//     background-position: 70%;
+//   }
+//   90% {
+//     background-position: 50%;
+//   }
+//   100% {
+//     background-position: 0%;
+//   }
+// }
 
 .hero__list-shop {
   display: none;
@@ -166,6 +211,14 @@
   line-height: 1.25;
   text-decoration-line: underline;
   color: var(--yello-color);
+  transition: color 250ms linear;
+
+  &:hover {
+    color: var(--btn-hover-focus-color);
+  }
+  &:focus {
+    color: var(--main-white-color);
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -240,5 +293,21 @@
   }
   @media screen and (min-width: 1200px) {
     left: 651px;
+  }
+}
+
+// Animation
+.hero__plate--animation {
+  @media screen and (min-width: 768px) {
+    animation: rotatePlate 9s linear infinite;
+  }
+}
+
+@keyframes rotatePlate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

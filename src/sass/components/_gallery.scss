@@ -1,0 +1,57 @@
+.gallery {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/gallery/bg-icecream-mobile.jpg);
+}
+
+.gallery-img {
+  max-width: 100%;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -24px);
+  border-radius: 7.40681px;
+}
+@media screen and(min-width: 1200px) {
+  .gallery {
+    background-image: url(../images/gallery/bg-icecream-desktop.jpg);
+  }
+  .gallery-img {
+    transform: translate(-50%, -98px);
+    border-radius: 24px;
+  }
+}
+
+@media screen and(min-width: 768px) and (max-width: 1199px) {
+  .gallery {
+    background-image: url(../images/gallery/bg-icecream-tablet.jpg);
+  }
+  .gallery-img {
+    transform: translate(-50%, -164px);
+    border-radius: 18px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .gallery {
+    background-image: url(../images/gallery/bg-icecream-desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .gallery {
+    background-image: url(../images/gallery/bg-icecream-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .gallery {
+    background-image: url(../images/gallery/bg-icecream-mobile@2x.jpg);
+  }
+}
