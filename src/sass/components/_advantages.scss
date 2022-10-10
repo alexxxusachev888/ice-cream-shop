@@ -1,0 +1,105 @@
+.advantages {
+    background: var(--olive-color);
+    padding-top: 40px;
+    padding-bottom: 60px;
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 60px;
+      padding-bottom: 180px;
+    }
+  }
+  
+  .advantages__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+.wrapper-svg{
+    background-color: var(--yello-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    @media  screen and (max-width: 767px) {
+     margin-left: auto; 
+     margin-right: auto; 
+    }
+@media screen and (min-width: 768px) {
+    margin-bottom: 32px;     
+}
+@media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+}
+}
+  .advantages__img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+
+  .advantages__text {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 174%;
+text-align: center;
+color: var(--main-white-color);
+@media screen and (max-width: 767px) {
+   margin-bottom: 27px; 
+}
+@media  screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+
+}
+  } 
+  
+
+  .advantages__header {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 59px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--main-white-color);
+  
+    
+    @media screen and (min-width: 768px) {
+      margin-bottom: 13px;
+      font-size: 48px;
+
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 16px;
+      font-size: 58px;
+    }
+  }
+
+
+  .advantages__item {
+    @media screen and (min-width: 767px) {
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 320px;
+     
+    }
+  }  

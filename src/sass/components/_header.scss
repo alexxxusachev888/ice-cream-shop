@@ -42,6 +42,7 @@
   width: 32px;
   height: 32px;
   fill: var(--main-white-color);
+  transition: fill var(--duration-cubic);
 }
 
 .open-mobile-menu-btn {
@@ -53,7 +54,7 @@
 
   &:hover .burger-icon,
   &:focus .burger-icon {
-    fill: var(--main-black-color);
+    fill: var(--yello-color);
   }
 }
 
@@ -74,11 +75,14 @@
     align-items: center;
     gap: 27px;
   }
+
   .header__menu-link {
     font-weight: 700;
     font-size: 16px;
     line-height: calc(20 / 16);
     color: var(--main-white-color);
+    transition: color var(--duration-cubic);
+
     &:hover,
     &:focus {
       color: var(--yello-color);
@@ -127,26 +131,28 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 10;
   background-color: var(--olive-color);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  transform: translateX(100%);
+  // opacity: 0;
+  // visibility: hidden;
+  // pointer-events: none;
   //   overflow-y: scroll;
+  transition: transform var(--duration-cubic);
+  // transition: opacity var(--duration-cubic), visibility var(--duration-cubic);
 
-  transition: opacity var(--duration-cubic), visibility var(--duration-cubic);
-
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   display: none;
+  // }
 }
 
 .mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  transform: translateX(0);
+  // opacity: 1;
+  // visibility: visible;
+  // pointer-events: auto;
 }
 
 .mobile-menu__container {
@@ -160,6 +166,7 @@
 .icon-cros {
   width: 32px;
   height: 32px;
+  transition: fill var(--duration-cubic);
 }
 
 .mobile-menu__close-btn {
@@ -181,6 +188,7 @@
   align-items: center;
   height: 32px;
   width: 32px;
+
   &:hover .icon-cros,
   &:focus .icon-cros {
     fill: var(--main-black-color);
@@ -213,11 +221,14 @@
   font-size: 32px;
   line-height: calc(39 / 32);
   color: var(--main-white-color);
+  transition: color var(--duration-cubic);
+
   &:hover,
   &:focus {
     color: var(--main-black-color);
   }
 }
+
 .mobile-menu__open-modal-buy-btn {
   display: block;
   margin-left: auto;

@@ -45,8 +45,7 @@
         </li>
       </ul>
     </nav>
-
-    <button type="button" class="open-mobile-menu-btn " data-menu-open>
+    <button type="button" class="open-mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <svg class="burger-icon">
         <use href="./images/svg-sprite.svg#icon-burger-menu-icon"></use>
       </svg>
@@ -62,9 +61,9 @@
 
   <!-- mobile menu -->
 
-  <div class="mobile-menu" data-menu>
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
     <div class="container mobile-menu__container">
-      <button type="button" class="mobile-menu__close-btn" data-menu-close>
+      <button type="button" class="mobile-menu__close-btn js-close-menu">
         <svg class="icon-cros">
           <use href="./images/svg-sprite.svg#icon-close-icon"></use>
         </svg>
@@ -100,16 +99,16 @@
       </a>
       <ul class="mobile-menu__list list">
         <li class="mobile-menu__list-item">
-          <a class="mobile-menu__list-link links" href="./index.html#hero">Home</a>
+          <a class="mobile-menu__list-link links js-close-menu" href="./index.html">Home</a>
         </li>
         <li class="mobile-menu__list-item">
-          <a class="mobile-menu__list-link links" href="./index.html#about">How it’s made?</a>
+          <a class="mobile-menu__list-link links js-close-menu" href="#about">How it’s made?</a>
         </li>
         <li class="mobile-menu__list-item">
-          <a class="mobile-menu__list-link links" href="./index.html#products">Our products</a>
+          <a class="mobile-menu__list-link links js-close-menu" href="#products">Our products</a>
         </li>
         <li class="mobile-menu__list-item">
-          <a class="mobile-menu__list-link links" href="./index.html#contact">Contact</a>
+          <a class="mobile-menu__list-link links js-close-menu" href="#contact">Contact</a>
         </li>
       </ul>
       <button type="button" class="button mobile-menu__open-modal-buy-btn button--buy">
