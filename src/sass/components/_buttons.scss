@@ -1,25 +1,11 @@
-// Стилі для демонстрації -->
-.back {
-  background: #aec6a5;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-}
 // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-.title {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
 // Кнопка основні стилі -->
 
 .button {
   display: inline-flex;
   align-items: center;
-  // justify-content: center;
   height: 42px;
   padding: 0px 34px;
-  // margin: 0 auto 10px;
   border: 2px solid var(--btn-default-color);
   border-radius: 10px;
 
@@ -65,7 +51,6 @@
   @media screen and (min-width: 1200px) {
     height: 42px;
     padding: 12px 34px;
-    // margin: 0 auto 10px;
     border-radius: 10px;
     font-size: 14px;
   }
