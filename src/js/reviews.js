@@ -1,6 +1,3 @@
-import $ from 'jquery';
-import 'slick-carousel';
-
 $('.customer-reviews__list').slick({
   dots: true,
   arrows: false,
