@@ -22,9 +22,11 @@
     background: var(--btn-hover-focus-color);
     border: 2px solid var(--btn-hover-focus-color);
   }
+
   &:focus {
     color: var(--main-white-color);
   }
+
   &:disabled {
     background: var(--btn-disabled-color);
     border: 2px solid var(--btn-disabled-color);
@@ -32,7 +34,7 @@
 }
 
 .button__text {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .button__icon {
@@ -49,6 +51,7 @@
   font-weight: 600;
   font-size: 8px;
   line-height: 1.25;
+
   @media screen and (min-width: 1200px) {
     height: 42px;
     padding: 12px 34px;
@@ -59,6 +62,7 @@
 
 .button--products {
   background: transparent;
+
   &:hover,
   &:focus,
   &:disabled {
@@ -72,17 +76,20 @@
   background: transparent;
   border: 2px solid transparent;
   transition: color var(--duration-cubic);
+
   &:hover,
   &:focus {
     color: var(--btn-hover-focus-color);
     background: transparent;
     border: 2px solid transparent;
   }
+
   &:focus {
     color: var(--main-white-color);
     background: transparent;
     border: 2px solid transparent;
   }
+
   &:disabled {
     color: var(--btn-disabled-color);
     background: transparent;
@@ -93,6 +100,7 @@
 .button--franchise {
   padding: 12px 46px;
   background: transparent;
+
   &:hover,
   &:focus,
   &:disabled {
