@@ -9,22 +9,22 @@
   background-size: 328px 50px;
 
   @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/mobile-hero/hero-point@2x.png);
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 104px;
-    padding-bottom: 13px;
+    padding-bottom: 32px;
     background-image: url(../images/tablet-hero/point-hero.png);
     background-size: 767px 67px;
 
     @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/tablet-hero/point-hero@2x.png);
     }
   }
@@ -36,9 +36,9 @@
     background-size: 1200px 384px;
 
     @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/desktop-hero/point-hero@2x.png);
     }
   }
@@ -55,17 +55,18 @@
 .hero__title {
   width: 250px;
   margin-bottom: 32px;
-  font-family: 'Seymour One';
+  font-family: var(--Seymour);
   font-style: normal;
   font-size: 26px;
+  font-weight: 400;
   line-height: 1.27;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--main-white-color);
 
   @media screen and (min-width: 768px) {
-    width: 181px;
     margin-bottom: 20px;
+    width: 181px;
     font-size: 18px;
     line-height: 1.27;
     letter-spacing: normal;
@@ -74,7 +75,6 @@
   @media screen and (min-width: 1200px) {
     margin-bottom: 28px;
     width: 367px;
-    font-weight: 400;
     font-size: 38px;
     line-height: 1.26;
     letter-spacing: 0.04em;
@@ -96,11 +96,13 @@
 
 .hero__list-shop {
   display: none;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   @media screen and (min-width: 1200px) {
     gap: 16px;
   }
@@ -130,6 +132,7 @@
   text-transform: uppercase;
 
   color: var(--main-black-color);
+
   @media screen and (min-width: 1200px) {
     font-size: 46px;
   }
@@ -172,6 +175,7 @@
   &:hover {
     color: var(--btn-hover-focus-color);
   }
+
   &:focus {
     color: var(--main-white-color);
   }
@@ -206,6 +210,7 @@
     gap: 20px;
     width: 151px;
   }
+
   @media screen and(min-width: 1200px) {
     width: 200px;
     gap: 32px;
@@ -218,6 +223,7 @@
     line-height: 1.4;
     color: var(--main-white-color);
   }
+
   @media screen and(min-width: 1200px) {
     font-size: 14px;
     line-height: 1.41;
@@ -241,6 +247,7 @@
     left: 55%;
     transform: translateX(0);
   }
+
   @media screen and (min-width: 1200px) {
     left: 55%;
   }
@@ -257,6 +264,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
