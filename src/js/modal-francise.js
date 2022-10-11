@@ -1,14 +1,12 @@
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-modal-franchise-open]'),
-      closeModalBtn: document.querySelector('[data-modal-franchise-close]'),
-      modal: document.querySelector('[data-modal-franchise]'),
-    };
-  
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle('is-hidden');
-    }
-  })();
+  const openModalBtn = document.querySelector('[data-modal-franchise-open]');
+  const closeModalBtn = document.querySelector('[data-modal-franchise-close]');
+  const modal = document.querySelector('[data-modal-franchise]');
+
+  openModalBtn.addEventListener('click', toggleModal);
+  closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    modal.classList.toggle('is-hidden');
+  }
+})();
