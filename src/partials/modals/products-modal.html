@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-modal-products>
+<div class="backdrop-products is-hidden" data-modal-products>
   <div class="modal__products">
     <button class="modal-products__button" data-modal-products-close>
       <svg class="modal-products-button__icon" width="20" height="20">
@@ -9,19 +9,23 @@
     <p class="modal-products__title">Chololate icecream</p>
 
     <div class="modal-products__img-wrap">
-      <picture class="modal-products__img"">
-      <source
-        srcset=" /src/images/About/Cow-desktop.png 1x, /src/images/About/Cow-desktop@2x.png 2x "
-        mobile=" (min-width: 1200px)" />
-      <source srcset="
-          /src/images/About/Cow-tablet.png    1x,
-          /src/images/About/Cow-tablet@2x.png 2x
-        " mobile="(min-width: 768px)" />
-      <source srcset="
-          /src/images/About/Cow-mobile.png    1x,
-          /src/images/About/Cow-mobile@2x.png 2x
-        " mobile="(min-width: 480px)" />
-      <img src="/src/images/About/Cow.png" alt="Icecream" />
+      <picture class="modal-products__img">
+        <source
+          srcset="
+            /src/images/products/desktop/modal-buy-t-d.png    1x,
+            /src/images/products/desktop/modal-buy-t-d@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/products/mobile/modal-buy-m.png    1x,
+            /src/images/products/mobile/modal-buy-m@2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="/src/images/products/desktop/modal-buy.png" alt="Icecream" />
+      </picture>
     </div>
 
     <ul class="modal-products__components-list components-list">
