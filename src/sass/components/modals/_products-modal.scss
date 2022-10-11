@@ -15,7 +15,7 @@
   }
 
   &.is-hidden .modal__products {
-    transform: translate(-50%, -50%) scale(0);
+    transform: translateX(-50%), scale(0);
   }
 }
 
@@ -26,12 +26,12 @@
   border-radius: 10px;
   padding: 28px 20px 32px;
   position: absolute;
-  top: 50%;
+  top: 10px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   transition: transform var(--main-transition);
   .backdrop.is-hidden & {
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
 
   @media screen and (min-width: 768px) {
