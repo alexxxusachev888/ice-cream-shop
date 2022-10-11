@@ -2,7 +2,7 @@
   padding-top: 186px;
   padding-bottom: 394px;
 
-  background-image: url('../images/reviewers/bg/ic-bg-320@1x-min.png');
+  background-image: url('../images/reviewers/bg/ic-bg-320@1x-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,31 +10,31 @@
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url('../images/reviewers/bg/ic-bg-320@2x-min.png');
+    background-image: url('../images/reviewers/bg/ic-bg-320@2x-min.jpg');
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 223px;
     padding-bottom: 383px;
-    background-image: url('../images/reviewers/bg/ic-bg-768@1x-min.png');
+    background-image: url('../images/reviewers/bg/ic-bg-768@1x-min.jpg');
   }
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    background-image: url('../images/reviewers/bg/ic-bg-768@2x-min.png');
+    background-image: url('../images/reviewers/bg/ic-bg-768@2x-min.jpg');
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 452px;
     padding-bottom: 200px;
-    background-image: url('../images/reviewers/bg/ic-bg-1200@1x-min.png');
+    background-image: url('../images/reviewers/bg/ic-bg-1200@1x-min.jpg');
   }
 
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    background-image: url('../images/reviewers/bg/ic-bg-1200@2x-min.png');
+    background-image: url('../images/reviewers/bg/ic-bg-1200@2x-min.jpg');
   }
 
 
@@ -73,6 +73,9 @@
 
 @media screen and (min-width:768px) {
   .customer-reviews {
+    padding-top: 223px;
+    padding-bottom: 383px;
+
     &__img {
       margin-bottom: 28px;
     }
@@ -99,6 +102,9 @@
 
 @media screen and (min-width:1200px) {
   .customer-reviews {
+    padding-top: 456px;
+    padding-bottom: 196px;
+
     &__box-review {
       width: 968px;
       margin: 0 auto 32px;
