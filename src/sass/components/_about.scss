@@ -1,17 +1,26 @@
 .about {
+  padding-top: 60px;
   background-color: var(--olive-color);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 100px;
+  }
 }
+
 
 .about__title-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -50,7 +59,7 @@
 }
 
 .about__title {
-  font-family: 'Seymour One';
+  font-family: var(--Seymour);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -61,6 +70,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
+    letter-spacing: 0.06em;
   }
 
   line-height: 1.27;
@@ -101,6 +111,16 @@
   @media screen and (min-width: 1200px) {
     gap: 100px;
   }
+}
+
+.about__content button {
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    margin-right: auto;
+  }
+
 }
 
 .about__img {
@@ -146,14 +166,14 @@
     rgba(248, 210, 78, 0.7),
     rgba(248, 210, 78, 0.7)),
   #d9d9d9;
-  margin-bottom: 62px;
+  margin-bottom: 62;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 74px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 89px;
+    margin-bottom: 0;
   }
 }
 

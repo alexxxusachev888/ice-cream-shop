@@ -58,8 +58,6 @@
   background-color: var(--main-white-color);
   border-color: transparent;
 
-  cursor: pointer;
-
   @media screen and (min-width: 768px) {
     top: 20px;
     right: 20px;
@@ -228,10 +226,7 @@
     right: 8px;
     border: none;
     background-color: transparent;
-    cursor: pointer;
     transition: transform var(--duration-cubic);
-
-
 
     &:hover,
     &:focus {
@@ -328,7 +323,6 @@
     border-radius: 10px;
     padding: 8px 43px;
     margin: 0 auto;
-    cursor: pointer;
     transition: background-color var(--duration-cubic);
 
     &:hover,

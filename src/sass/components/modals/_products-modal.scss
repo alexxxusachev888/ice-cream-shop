@@ -33,6 +33,7 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%);
   }
+
   @media screen and (min-width: 768px) {
     width: 568px;
     padding: 32px 40px;
@@ -45,6 +46,7 @@
   position: absolute;
   top: 28px;
   right: 20px;
+
   @media screen and (min-width: 768px) {
     top: 20px;
   }
@@ -90,6 +92,7 @@
 .components-list {
   display: flex;
   justify-content: space-between;
+
   @media screen and (min-width: 768px) {
     gap: 20px;
     justify-content: center;
@@ -104,6 +107,7 @@
   height: 72px;
   border: 2px solid var(--calories-stroke-color);
   border-radius: 40px;
+
   @media screen and (min-width: 768px) {
     width: 65px;
     height: 90px;
@@ -124,6 +128,7 @@
   font-weight: 500;
   font-size: 10px;
   line-height: 2.8;
+
   @media screen and (min-width: 768px) {
     width: 53px;
     height: 53px;
@@ -138,6 +143,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
+
   @media screen and (min-width: 768px) {
     margin-top: 7px;
     font-size: 12px;
@@ -153,6 +159,7 @@
   font-size: 20px;
   line-height: 1.4;
   color: var(--main-black-color);
+
   @media screen and (min-width: 768px) {
     margin-top: 48px;
   }
@@ -176,6 +183,7 @@
 .modal-products__form {
   margin-top: 48px;
   text-align: center;
+
   @media screen and (min-width: 768px) {
     margin-top: 49px;
     width: 368px;
