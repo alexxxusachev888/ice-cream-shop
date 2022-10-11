@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  cursor: url('../images/custome-cursor.svg'), default;
 }
 
 h1,
@@ -24,6 +25,7 @@ img {
 }
 
 a {
+  cursor: url('../images/custome-cursor.svg'), pointer;
   text-decoration: none;
 }
 
@@ -66,4 +68,8 @@ address {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+button {
+  cursor: url('../images/custome-cursor.svg'), pointer;
 }
