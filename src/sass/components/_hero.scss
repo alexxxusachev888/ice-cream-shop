@@ -9,22 +9,22 @@
   background-size: 328px 50px;
 
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/mobile-hero/hero-point@2x.png);
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 104px;
+    padding-top: 94px;
     padding-bottom: 32px;
     background-image: url(../images/tablet-hero/point-hero.png);
     background-size: 767px 67px;
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/tablet-hero/point-hero@2x.png);
     }
   }
@@ -36,9 +36,9 @@
     background-size: 1200px 384px;
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/desktop-hero/point-hero@2x.png);
     }
   }
@@ -49,14 +49,16 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 42px;
   }
 }
 
 .hero__title {
-  width: 250px;
   margin-bottom: 32px;
   font-family: var(--Seymour);
-  font-style: normal;
   font-size: 26px;
   font-weight: 400;
   line-height: 1.27;
@@ -154,11 +156,9 @@
   gap: 8px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 28px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 42px;
     gap: 12px;
     align-items: center;
   }
@@ -170,7 +170,7 @@
   line-height: 1.25;
   text-decoration-line: underline;
   color: var(--yello-color);
-  transition: color 250ms linear;
+  transition: color var(--duration-cubic);
 
   &:hover {
     color: var(--btn-hover-focus-color);
