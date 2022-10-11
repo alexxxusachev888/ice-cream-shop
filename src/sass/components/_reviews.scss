@@ -1,73 +1,122 @@
 .customer-reviews {
-    &__img {
-        width: 85px;
-        height: 85px;
-        margin: 0 auto 32px;
-    }
+  padding-top: 186px;
+  padding-bottom: 394px;
 
-    &__box-review {
-        background: var(--olive-color);
-        padding: 34px 39px;
-        border-radius: 10px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
+  background-image: url('../images/reviewers/bg/ic-bg-320@1x-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    &__review {
-        font-size: 12px;
-        line-height: 2.55;
-        color: var(--main-white-color);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/reviewers/bg/ic-bg-320@2x-min.png');
+  }
 
-    }
+  @media screen and (min-width: 768px) {
+    padding-top: 223px;
+    padding-bottom: 383px;
+    background-image: url('../images/reviewers/bg/ic-bg-768@1x-min.png');
+  }
 
-    &__name {
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.86;
-        color: var(--main-black-color);
-        margin-bottom: 14px;
-    }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url('../images/reviewers/bg/ic-bg-768@2x-min.png');
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 452px;
+    padding-bottom: 200px;
+    background-image: url('../images/reviewers/bg/ic-bg-1200@1x-min.png');
+  }
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url('../images/reviewers/bg/ic-bg-1200@2x-min.png');
+  }
+
+
+  &__img {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 32px;
+  }
+
+  &__box-review {
+    background: var(--olive-color);
+    padding: 34px 39px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__review {
+    font-size: 12px;
+    line-height: 2.55;
+    color: var(--main-white-color);
+
+  }
+
+  &__name {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    color: var(--main-black-color);
+    margin-bottom: 14px;
+  }
 }
 
 @media screen and (min-width:768px) {
-    .customer-reviews {
-        &__img {
-            margin-bottom: 28px;
-        }
-
-        &__box-review {
-            border-radius: 24px;
-            padding: 29px 80px;
-            margin-bottom: 32px;
-        }
-
-        &__review {
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 1.86;
-            letter-spacing: 0.04em;
-        }
-
-        &__name {
-            font-size: 16px;
-            margin-bottom: 32px;
-        }
+  .customer-reviews {
+    &__img {
+      margin-bottom: 28px;
     }
+
+    &__box-review {
+      border-radius: 24px;
+      padding: 29px 80px;
+      margin-bottom: 32px;
+    }
+
+    &__review {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.86;
+      letter-spacing: 0.04em;
+    }
+
+    &__name {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
 }
 
 @media screen and (min-width:1200px) {
-    .customer-reviews {
-        &__box-review {
-            width: 968px;
-            margin: 0 auto 32px;
-            padding: 39px 109px 47px;
-        }
-
-        &__review {
-            font-size: 16px;
-        }
+  .customer-reviews {
+    &__box-review {
+      width: 968px;
+      margin: 0 auto 32px;
+      padding: 39px 109px 47px;
     }
+
+    &__review {
+      font-size: 16px;
+    }
+  }
+}
+
+.slick-dots li button:before {
+  font-size: 20px;
+  color: var(--olive-color);
+}
+
+
+.slick-dots li.slick-active button:before {
+  color: var(--olive-color);
 }

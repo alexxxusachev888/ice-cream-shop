@@ -9,9 +9,11 @@
   align-items: center;
   padding-top: 60px;
   margin-bottom: 32px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 48px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 82px;
   }
@@ -20,20 +22,27 @@
 .about__title-label {
   font-style: normal;
   font-weight: 700;
+
   @media screen and (min-width: 768px) {
     font-weight: 800;
   }
+
   font-size: 18px;
+
   @media screen and (min-width: 768px) {
     font-size: 22px;
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 30px;
   }
+
   line-height: 1.22;
+
   @media screen and (min-width: 768px) {
     line-height: 1.23;
   }
+
   text-align: center;
   text-transform: uppercase;
   color: var(--main-white-color);
@@ -45,24 +54,31 @@
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
+
   @media screen and (min-width: 768px) {
     font-size: 34px;
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 36px;
   }
+
   line-height: 1.27;
+
   @media screen and (min-width: 768px) {
     line-height: 1.26;
   }
+
   @media screen and (min-width: 1200px) {
     line-height: 1.25;
   }
+
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--main-white-color);
   width: 200px;
+
   @media screen and (min-width: 768px) {
     width: 100%;
   }
@@ -70,14 +86,18 @@
 
 .about__content {
   display: block;
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
+
   justify-content: center;
   align-items: center;
+
   @media screen and (min-width: 768px) {
     gap: 32px;
   }
+
   @media screen and (min-width: 1200px) {
     gap: 100px;
   }
@@ -86,41 +106,52 @@
 .about__img {
   position: relative;
   margin-right: auto;
+  width: 100%;
+
   @media screen and (min-width: 768px) {
     margin-right: 0;
   }
+
   margin-left: auto;
+
   @media screen and (min-width: 768px) {
     margin-left: 0;
   }
+
   display: flex;
   align-items: center;
   justify-content: center;
   width: 278px;
+
   @media screen and (min-width: 768px) {
     width: 334px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 500px;
   }
+
   height: 278px;
+
   @media screen and (min-width: 768px) {
     height: 330px;
   }
+
   @media screen and (min-width: 1200px) {
     height: 500px;
   }
+
   border-radius: 50%;
-  background: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
+  background: linear-gradient(0deg,
+    rgba(248, 210, 78, 0.7),
+    rgba(248, 210, 78, 0.7)),
+  #d9d9d9;
   margin-bottom: 62px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 74px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 89px;
   }
@@ -128,26 +159,41 @@
 
 .about__img-cow {
   position: absolute;
-  top: 22px;
-  @media screen and (min-width: 768px) {
-    top: 26px;
-  }
-  @media screen and (min-width: 1200px) {
-    top: 39px;
-  }
+  top: 0;
+
+  transition: transform var(--duration-cubic);
+
   display: block;
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
+.cow-drop.drop {
+  transform: translateY(22px);
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(26px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    transform: translateY(39px);
+  }
+}
+
+.about__img-cow1 {
+  width: 100%;
+}
+
 .about__text-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   @media screen and (min-width: 768px) {
     justify-content: start;
   }
+
   align-items: center;
 }
 
@@ -155,27 +201,36 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
+
   @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
+
   line-height: 1.76;
   text-align: center;
+
   @media screen and (min-width: 768px) {
     text-align: start;
   }
+
   letter-spacing: 0.04em;
   color: var(--main-white-color);
   width: 220px;
+
   @media screen and (min-width: 768px) {
     width: 334px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 463px;
   }
+
   margin-bottom: 4px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
   }
+
   @media screen and (min-width: 768px) {
     padding: 0;
   }
@@ -185,29 +240,40 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
+
   line-height: 1.62;
+
   @media screen and (min-width: 768px) {
     line-height: 1.76;
   }
+
   @media screen and (min-width: 1200px) {
     line-height: 1.94;
   }
+
   text-align: center;
+
   @media screen and (min-width: 768px) {
     text-align: start;
   }
+
   color: var(--main-white-color);
   margin-bottom: 20px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
   }
+
   width: 220px;
+
   @media screen and (min-width: 768px) {
     width: 334px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 463px;
   }
@@ -215,22 +281,28 @@
 
 .about__text3 {
   display: none;
+
   @media screen and (min-width: 768px) {
     display: block;
   }
+
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
+
   line-height: 1.94;
   letter-spacing: 0.04em;
   color: var(--main-white-color);
   width: 334px;
+
   @media screen and (min-width: 1200px) {
     width: 463px;
   }
+
   margin-bottom: 48px;
   text-align: start;
 }
@@ -239,10 +311,12 @@
   width: 164px;
   height: 42px;
   margin-bottom: 42px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }
+
 // Закоментував бо ламало стилі перебиваючи стилі з _buttons.scss
 // .button {
 //   display: inline-flex;
