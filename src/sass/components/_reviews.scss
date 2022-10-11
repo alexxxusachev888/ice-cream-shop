@@ -113,8 +113,9 @@
 
 .slick-dots li button:before {
   font-size: 20px;
-  color: #D9D9D9;
+  color: var(--olive-color);
 }
+
 
 .slick-dots li.slick-active button:before {
   color: var(--olive-color);
