@@ -2,7 +2,7 @@
   "name": "ice-cream-shop",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://alexxxusachev888.github.io/ice-cream-shop",
+  "homepage": "https://MihajloGerbach.github.io/ice-cream-shop",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /ice-cream-shop/"

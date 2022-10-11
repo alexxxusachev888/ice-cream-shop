@@ -1,6 +1,8 @@
 @import './utilits/normalize';
 @import './utilits/base';
 @import './utilits/variables';
+@import './utilits/mixin';
+
 @import './components/buttons';
 @import './components/header';
 @import './components/hero';
@@ -16,3 +18,4 @@
 @import './components/modals/about-modal';
 @import './components/modals/location-modal';
 @import './components/modals/franchise-modal';
+@import './components/modals/buy-now-modal';
