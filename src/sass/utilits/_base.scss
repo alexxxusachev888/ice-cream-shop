@@ -33,6 +33,15 @@ address {
   font-style: normal;
 }
 
+input:valid:not(:placeholder-shown) {
+  border-color: var(--olive-color);
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
