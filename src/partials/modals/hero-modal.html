@@ -1,42 +1,50 @@
-<div class="backdrop-hero is-hidden" data-hero-modal>
-  <div class="hero-modal">
-    <button class="hero-modal__button" type="button" data-about-modal-close>
-      <svg class="hero-modal__icon">
+<div class="backdrop is-hidden" data-hero-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-hero-modal-close>
+      <svg class="modal__close-icon" width="20" height="20">
         <use href="./images/svg-sprite.svg#icon-close-icon"></use>
       </svg>
     </button>
-    <p class="hero-modal__title">Buy now</p>
-    <ul>
-      <li>
-        <label>
-          ice cream
-          <input type="checkbox">
+    <p class="modal__form-title">Buy now</p>
+    <ul class="modal__choice">
+      <li class="modal__item">
+        <label class="check check-cream">
+          <input class="checkbox" type="checkbox" name="product" value="ice cream">
+          <span class="text text-cream">ice cream</span>
+          <span class="gradient gradient-cream"></span>
+          <span class="img img-cream"></span>
         </label>
       </li>
-      <li>
-        <label>
-          ice coffee
-          <input type="checkbox">
+      <li class="modal__item">
+        <label class="check check-coffe">
+          <input class="checkbox" type="checkbox" name="product" value="ice coffe">
+          <span class="text text-coffe">ice coffee</span>
+          <span class="gradient gradient-coffe"></span>
+          <span class="img img-coffe"></span>
         </label>
       </li>
-      <li>
-        <label>
-          milkshake
-          <input type="checkbox">
+      <li class="modal__item">
+        <label class="check check-milk">
+          <input class="checkbox" type="checkbox" name="product" value="milkshake">
+          <span class="text text-milk">milkshake</span>
+          <span class="gradient gradient-milk"></span>
+          <span class="img img-milk"></span>
         </label>
       </li>
     </ul>
-    <form class="modal-products__form">
-      <input id="user_name_product" class="modal-products__input" type="text" placeholder="Name" required
-        pattern="[a-zA-Zа-яА-Я]+" minlength="2" />
-      <label for="user_name_product" class="modal-products__description visually-hidden">Name</label>
-      <input id="user_phone_product" class="modal-products__input" type="tel" placeholder="Phone" required
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
-      <label for="user_phone_product" class="modal-products__description visually-hidden">Phone</label>
-      <label class="modal-products__description-comment">
-        <textarea name="user_comment_product" class="modal-products__comment" placeholder="Comment"></textarea>
-      </label>
-      <button type="submit" class="button modal-products__btn">Submit</button>
+    <form class="modal__form">
+      <div class="modal__input-field">
+        <label class="modal__form-field"><input type="text" class="modal__form-input" required pattern="[a-zA]+"
+            name="user-name" placeholder="Name">
+        </label>
+        <label class="modal__form-field"><input type="tel" class="modal__form-input" required
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" name="user-phone" placeholder="Phone">
+        </label>
+        <label class="modal__form-field">
+          <textarea name="user-message" class="modal__form-message" placeholder="Comment"></textarea>
+        </label>
+      </div>
+      <button type="submit" class="modal__form-submit">Submit</button>
     </form>
   </div>
 </div>
