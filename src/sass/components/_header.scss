@@ -25,8 +25,10 @@
 
 .icon-up {
   fill: var(--yello-color);
+  // fill: rgb(0, 128, 0);
+
   opacity: 0.8;
-  transition: fill var(--duration-cubic), 0opacity var(--duration-cubic);
+  transition: fill var(--duration-cubic), opacity var(--duration-cubic);
 }
 
 .button-up {
@@ -34,6 +36,7 @@
 
   &:hover .icon-up {
     fill: rgba(0, 128, 0, 1);
+    opacity: 0.8;
   }
 }
 
