@@ -58,3 +58,10 @@
     d="M14.019 17.062l-8.5 8.5c-0.588 0.588-1.538 0.588-2.119 0l-1.413-1.412c-0.587-0.588-0.587-1.538 0-2.119l6.025-6.025-6.025-6.025c-0.587-0.588-0.587-1.537 0-2.119l1.406-1.425c0.587-0.588 1.537-0.588 2.119 0l8.5 8.5c0.594 0.588 0.594 1.538 0.006 2.125z"
   ></path>
 </symbol>
+
+window.onscroll = function () { if (window.screen.width >= 768) { scrollY <= 70
+? document.getElementById('button-up').classList.remove('button-up__scroll') :
+document.getElementById('button-up').classList.add('button-up__scroll'); } else
+{ scrollY <= 120 ?
+document.getElementById('button-up').classList.remove('button-up__scroll') :
+document.getElementById('button-up').classList.add('button-up__scroll'); } };
