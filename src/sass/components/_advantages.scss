@@ -3,13 +3,14 @@
   padding-top: 42px;
   padding-bottom: 60px;
 
+
   @media screen and (min-width: 768px) {
     padding-top: 53px;
     padding-bottom: 204px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 0;
+    padding-top: 150px;
     padding-bottom: 180px;
   }
 }
@@ -85,6 +86,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--main-white-color);
+position: relative;
 
 
   @media screen and (min-width: 768px) {
@@ -99,6 +101,75 @@
     line-height: 71px;
   }
 }
+
+.advantages__header::before{
+   
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+    content: '';
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-color: var(--yello-color);
+    background-repeat: no-repeat;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cow::before {
+    background-image: url('../images/advantages/mobile/cow-icon.png');
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .cow::before {
+      background-image: url('../images/advantages/mobile/cow-icon@2x.png');
+      background-size: 75% auto;
+    }
+  }
+  
+  .weight::before {
+    background-image: url('../images/advantages/mobile/weight-icon.png');
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .weight::before {
+      background-image: url('../images/advantages/mobile/weight-icon@2x.png');
+      background-size: 75% auto;
+    }
+  }
+  
+  .ice-cream::before {
+    background-image: url('../images/advantages/mobile/ice-cream-icon.png');
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .ice-cream::before {
+      background-image: url('../images/advantages/mobile/ice-cream-icon@2x.png');
+      background-size: 75% auto;
+    }
+  }
+// .advantages__header::after{
+//     background-color: red;
+//     content: '';
+//     position: absolute;
+//     z-index: 5;
+//     display: inline-block;
+//     content: '';
+//     height: 50px;
+//     width: 50px;
+//     border-radius: 50%;
+//     background-position: center;
+//     background-color: var(--background-button-static);
+//     background-repeat: no-repeat;
+// }
 
 
 .advantages__item {
