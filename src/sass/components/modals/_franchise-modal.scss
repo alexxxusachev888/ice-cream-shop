@@ -183,6 +183,14 @@
   }
 }
 
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
 /* .backdrop {
     position: fixed;
     z-index: 1000;
