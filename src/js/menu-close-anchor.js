@@ -1,13 +1,12 @@
-$('.js-anchor-scroll').click(function () {
+$('.js-anchor').click(function () {
   $('.js-mobile-menu').removeClass('is-open');
 });
 
 $(document).ready(function () {
   $('a').on('click', function (event) {
     if (this.hash !== '') {
-      // Prevent default anchor click behavior
       event.preventDefault();
-      // Store hash
+
       var hash = this.hash;
 
       $('html, body').animate(
@@ -16,7 +15,6 @@ $(document).ready(function () {
         },
         800,
         function () {
-          // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         }
       );
