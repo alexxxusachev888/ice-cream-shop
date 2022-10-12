@@ -18,7 +18,7 @@
   }
 
   &.is-hidden .modal__franchise {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(0) rotate(-180deg);
   }
 }
 
@@ -26,7 +26,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform var(--duration-cubic);
   padding: 28px;
   width: 280px;
 
@@ -38,7 +39,7 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transition: transform var(--duration-cubic);
+
 
   @media screen and (min-width: 768px) {
     padding: 32px 60px;
@@ -138,20 +139,6 @@
 
   @media screen and (min-width: 768px) {
     width: 368px;
-  }
-}
-
-.modal-franchise__input,
-.modal-franchise__message,
-.modal-franchise__input::placeholder,
-.modal-franchise__message::placeholder {
-  font-family: var(--montserrat);
-  font-size: 12px;
-  line-height: 1.40;
-  color: var(--main-black-color);
-
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
   }
 }
 

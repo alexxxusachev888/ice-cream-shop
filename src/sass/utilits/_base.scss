@@ -45,6 +45,19 @@ textarea:not(:focus):not(:placeholder-shown):invalid {
   border-color: #ff0000;
 }
 
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--montserrat);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.40;
+  color: var(--main-black-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;

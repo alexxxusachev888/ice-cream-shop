@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   padding-top: 39px;
   padding-bottom: 62px;
   background-color: var(--olive-color);
@@ -59,11 +60,7 @@
     fill: var(--olive-color);
     transition: transform 250ms linear;
 
-    &:hover {
-      fill: var(--main-white-color);
-      transform: scale(0.9);
-    }
-
+    &:hover,
     &:focus {
       fill: var(--main-white-color);
       transform: scale(1.1);
@@ -163,6 +160,19 @@
 .footer__copyrights {
   border-top: 1px solid var(--line-color);
   border-width: 109%;
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   &-warn {
     padding-top: 16px;
