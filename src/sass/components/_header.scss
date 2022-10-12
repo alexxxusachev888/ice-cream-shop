@@ -11,6 +11,32 @@
 //   z-index: 999;
 // }
 
+.wrapper-up {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  bottom: 30px;
+  // right: 20px;
+  text-align: right;
+}
+.container-buton-up {
+  position: relative;
+}
+
+.icon-up {
+  fill: var(--yello-color);
+  opacity: 0.8;
+  transition: fill var(--duration-cubic), 0opacity var(--duration-cubic);
+}
+
+.button-up {
+  position: absolute;
+
+  &:hover .icon-up {
+    fill: rgba(0, 128, 0, 1);
+  }
+}
+
 .header__menu-list {
   display: none;
 }
