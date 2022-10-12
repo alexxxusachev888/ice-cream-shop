@@ -1,37 +1,41 @@
 .header {
-  // background-color: var(--olive-color);
   position: absolute;
   z-index: 999;
   width: 100%;
-  //   top: 0;
-  //   left: auto;
 }
 
 // .logo {
 //   z-index: 999;
 // }
+.wrapper-up {
+  display: none;
+}
+.button-up__scroll {
+  display: block;
+}
 
 .wrapper-up {
   position: fixed;
   width: 100%;
   z-index: 1;
   bottom: 30px;
-  // right: 20px;
-  text-align: right;
 }
+
 .container-buton-up {
   position: relative;
+  text-align: right;
 }
 
 .icon-up {
   fill: var(--yello-color);
-  // fill: rgb(0, 128, 0);
-
   opacity: 0.8;
+
   transition: fill var(--duration-cubic), opacity var(--duration-cubic);
 }
 
 .button-up {
+  display: inline-block;
+
   position: absolute;
 
   &:hover .icon-up {
