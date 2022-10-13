@@ -132,6 +132,8 @@
 .modal-franchise__message {
   padding: 8px 12px;
   width: 224px;
+  font-size: 14px;
+  line-height: 1.43;
 
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--olive-color);
@@ -146,6 +148,8 @@
   margin-bottom: 24px;
   min-height: 64px;
   resize: none;
+  font-size: 14px;
+  line-height: 1.43;
 
   @media screen and (min-width: 768px) {
     min-height: 84px;
