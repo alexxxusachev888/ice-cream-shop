@@ -176,7 +176,7 @@
   height: 131px;
 
   &-cream {
-    background-image: url('../images/hero-modal/ice-cream@1x.png');
+    background-image: url('../images/hero-modal/ice-coffee@1x.png');
   }
 
   &-coffe {
@@ -190,32 +190,90 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  /*   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     &-cream {
-      background-image: url('/src/images/modal-buy-now/kelsey-curtis-1x.png');
+      background-image: url('../images/hero-modal/ice-cream@1x.png');
 
-      @include retina {
-        background-image: url('/src/images/modal-buy-now/kelsey-curtis-2x.png');
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/hero-modal/ice-cream@2x.png');
       }
     }
 
     &-coffe {
-      background-image: url('/src/images/modal-buy-now/pariwat-pannium-1x.png');
+      background-image: url('../images/hero-modal/ice-coffee@1x.png');
 
-      @include retina {
-        background-image: url('/src/images/modal-buy-now/pariwat-pannium-2x.png');
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/hero-modal/ice-coffee@2x.png');
       }
     }
 
     &-milk {
-      background-image: url('/src/images/modal-buy-now/victor-rutka-1x.png');
+      background-image: url('../images/hero-modal/milk-shake@1x.png');
 
-      @include retina {
-        background-image: url('/src/images/modal-buy-now/victor-rutka-2x.png');
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/hero-modal/milk-shake@2x.png');
       }
     }
-  } */
+  }
 }
+
+// .img {
+//   position: absolute;
+//   top: -45%;
+//   left: 0;
+//   display: block;
+//   border-radius: 50%;
+//   width: 132px;
+//   height: 131px;
+
+//   &-cream {
+//     background-image: url('../images/hero-modal/ice-cream@1x.png');
+//   }
+
+//   &-coffe {
+//     background-image: url('../images/hero-modal/ice-coffee@1x.png');
+
+//   }
+
+//   &-milk {
+//     background-image: url('../images/hero-modal/milk-shake@1x.png');
+//   }
+
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   /*   @media screen and (min-width: 768px) {
+//     &-cream {
+//       background-image: url('/src/images/modal-buy-now/kelsey-curtis-1x.png');
+
+//       @include retina {
+//         background-image: url('/src/images/modal-buy-now/kelsey-curtis-2x.png');
+//       }
+//     }
+
+//     &-coffe {
+//       background-image: url('/src/images/modal-buy-now/pariwat-pannium-1x.png');
+
+//       @include retina {
+//         background-image: url('/src/images/modal-buy-now/pariwat-pannium-2x.png');
+//       }
+//     }
+
+//     &-milk {
+//       background-image: url('/src/images/modal-buy-now/victor-rutka-1x.png');
+
+//       @include retina {
+//         background-image: url('/src/images/modal-buy-now/victor-rutka-2x.png');
+//       }
+//     }
+//   } */
+// }
 
 .text-cream {
   border: 2px solid var(--ice-cream-color);
