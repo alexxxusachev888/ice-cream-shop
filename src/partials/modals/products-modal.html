@@ -1,3 +1,4 @@
+<!-- Icecream-modal -->
 <div class="backdrop-products is-hidden" data-modal-products>
   <div class="modal__products">
     <button class="modal-products__button" data-modal-products-close>
@@ -8,41 +9,45 @@
 
     <p class="modal-products__title">Chololate icecream</p>
 
-    <div class="modal-products__img-wrap">
+    <div class="modal-products__img-wrap modal-products__img-wrap--icecream">
       <picture class="modal-products__img">
         <source
           srcset="
-            /src/images/products/desktop/modal-buy-t-d.png    1x,
-            /src/images/products/desktop/modal-buy-t-d@2x.png 2x
+            ./images/products/desktop/modal-buy-t-d.png    1x,
+            ./images/products/desktop/modal-buy-t-d@2x.png 2x
           "
           media="(min-width: 768px)"
         />
         <source
           srcset="
-            /src/images/products/mobile/modal-buy-m.png    1x,
-            /src/images/products/mobile/modal-buy-m@2x.png 2x
+            ./images/products/mobile/modal-buy-m.png    1x,
+            ./images/products/mobile/modal-buy-m@2x.png 2x
           "
           media="(min-width: 320px)"
         />
-        <img src="/src/images/products/desktop/modal-buy.png" alt="Icecream" />
+        <img src="./images/products/desktop/modal-buy.png" alt="Icecream" />
       </picture>
     </div>
 
     <ul class="modal-products__components-list components-list">
-      <li class="components-list__item">
-        <span class="components-list__circle">320</span
+      <li class="components-list__item components-list__item--icecream">
+        <span class="components-list__circle components-list__circle--icecream"
+          >320</span
         ><span class="components-list__text">kcal</span>
       </li>
-      <li class="components-list__item">
-        <span class="components-list__circle">4g</span
+      <li class="components-list__item components-list__item--icecream">
+        <span class="components-list__circle components-list__circle--icecream"
+          >4g</span
         ><span class="components-list__text">Prote...</span>
       </li>
-      <li class="components-list__item">
-        <span class="components-list__circle">8,2g</span
+      <li class="components-list__item components-list__item--icecream">
+        <span class="components-list__circle components-list__circle--icecream"
+          >8,2g</span
         ><span class="components-list__text">Fats</span>
       </li>
-      <li class="components-list__item">
-        <span class="components-list__circle">40,4g</span
+      <li class="components-list__item components-list__item--icecream">
+        <span class="components-list__circle components-list__circle--icecream"
+          >40,4g</span
         ><span class="components-list__text">Carbs</span>
       </li>
     </ul>
@@ -73,6 +78,264 @@
       <li class="ingredients-list__item">
         <span class="ingredients-list__ingredient-name">Vanilla sugar</span
         ><span class="ingredients-list__ingredient-count">10g</span>
+      </li>
+    </ul>
+
+    <form class="modal-products__form">
+      <input
+        id="user_name_product"
+        class="modal-products__input"
+        type="text"
+        placeholder="Name"
+        required
+        pattern="[a-zA-Zа-яА-Я]+"
+        minlength="2"
+      />
+      <label
+        for="user_name_product"
+        class="modal-products__description visually-hidden"
+        >Name</label
+      >
+      <input
+        id="user_phone_product"
+        class="modal-products__input"
+        type="tel"
+        placeholder="Phone"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+      />
+      <label
+        for="user_phone_product"
+        class="modal-products__description visually-hidden"
+        >Phone</label
+      >
+      <label class="modal-products__description-comment">
+        <textarea
+          name="user_comment_product"
+          class="modal-products__comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="button modal-products__btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Ice-coffee-modal -->
+
+<div class="backdrop-products is-hidden" data-modal-products2>
+  <div class="modal__products">
+    <button class="modal-products__button" data-modal-products2-close>
+      <svg class="modal-products-button__icon" width="20" height="20">
+        <use href="./images/svg-sprite.svg#icon-close-icon"></use>
+      </svg>
+    </button>
+
+    <p class="modal-products__title">Ice coffee</p>
+
+    <div class="modal-products__img-wrap modal-products__img-wrap--ice-coffee">
+      <picture class="modal-products__img">
+        <source
+          srcset="
+            ./images/products/desktop/ice-coffee.png    1x,
+            ./images/products/desktop/ice-coffee@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/products/mobile/ice-coffee.png    1x,
+            ./images/products/mobile/ice-coffee@2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="./images/products/desktop/ice-coffee.png" alt="Icecream" />
+      </picture>
+    </div>
+
+    <ul class="modal-products__components-list components-list">
+      <li class="components-list__item components-list__item--ice-coffee">
+        <span
+          class="components-list__circle components-list__circle--ice-coffee"
+          >150</span
+        ><span class="components-list__text">kcal</span>
+      </li>
+      <li class="components-list__item components-list__item--ice-coffee">
+        <span
+          class="components-list__circle components-list__circle--ice-coffee"
+          >3g</span
+        ><span class="components-list__text">Prote...</span>
+      </li>
+      <li class="components-list__item components-list__item--ice-coffee">
+        <span
+          class="components-list__circle components-list__circle--ice-coffee"
+          >5,1g</span
+        ><span class="components-list__text">Fats</span>
+      </li>
+      <li class="components-list__item components-list__item--ice-coffee">
+        <span
+          class="components-list__circle components-list__circle--ice-coffee"
+          >60,8g</span
+        ><span class="components-list__text">Carbs</span>
+      </li>
+    </ul>
+
+    <p class="modal-products__subtitle">Ingredients</p>
+
+    <ul class="modal-products__ingredients-list ingredients-list">
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Coffee</span
+        ><span class="ingredients-list__ingredient-count">50ml</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Chocolate topping</span
+        ><span class="ingredients-list__ingredient-count">10g</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Caramel</span
+        ><span class="ingredients-list__ingredient-count">20 ml</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Ice</span
+        ><span class="ingredients-list__ingredient-count">30g</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Sugar</span
+        ><span class="ingredients-list__ingredient-count">5g</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Cream</span
+        ><span class="ingredients-list__ingredient-count">25ml</span>
+      </li>
+    </ul>
+
+    <form class="modal-products__form">
+      <input
+        id="user_name_product"
+        class="modal-products__input"
+        type="text"
+        placeholder="Name"
+        required
+        pattern="[a-zA-Zа-яА-Я]+"
+        minlength="2"
+      />
+      <label
+        for="user_name_product"
+        class="modal-products__description visually-hidden"
+        >Name</label
+      >
+      <input
+        id="user_phone_product"
+        class="modal-products__input"
+        type="tel"
+        placeholder="Phone"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+      />
+      <label
+        for="user_phone_product"
+        class="modal-products__description visually-hidden"
+        >Phone</label
+      >
+      <label class="modal-products__description-comment">
+        <textarea
+          name="user_comment_product"
+          class="modal-products__comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="button modal-products__btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Milkshakes-modal -->
+
+<div class="backdrop-products is-hidden" data-modal-products3>
+  <div class="modal__products">
+    <button class="modal-products__button" data-modal-products3-close>
+      <svg class="modal-products-button__icon" width="20" height="20">
+        <use href="./images/svg-sprite.svg#icon-close-icon"></use>
+      </svg>
+    </button>
+
+    <p class="modal-products__title">Milkshakes</p>
+
+    <div class="modal-products__img-wrap modal-products__img-wrap--milkshakes">
+      <picture class="modal-products__img">
+        <source
+          srcset="
+            ./images/products/desktop/milkshakes.png    1x,
+            ./images/products/desktop/milkshakes@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/products/mobile/milkshakes.png    1x,
+            ./images/products/mobile/milkshakes@2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="./images/products/desktop/milkshakes.png" alt="Icecream" />
+      </picture>
+    </div>
+
+    <ul class="modal-products__components-list components-list">
+      <li class="components-list__item components-list__item--milkshakes">
+        <span
+          class="components-list__circle components-list__circle--milkshakes"
+          >260</span
+        ><span class="components-list__text">kcal</span>
+      </li>
+      <li class="components-list__item components-list__item--milkshakes">
+        <span
+          class="components-list__circle components-list__circle--milkshakes"
+          >13g</span
+        ><span class="components-list__text">Prote...</span>
+      </li>
+      <li class="components-list__item components-list__item--milkshakes">
+        <span
+          class="components-list__circle components-list__circle--milkshakes"
+          >11g</span
+        ><span class="components-list__text">Fats</span>
+      </li>
+      <li class="components-list__item components-list__item--milkshakes">
+        <span
+          class="components-list__circle components-list__circle--milkshakes"
+          >51,3g</span
+        ><span class="components-list__text">Carbs</span>
+      </li>
+    </ul>
+
+    <p class="modal-products__subtitle">Ingredients</p>
+
+    <ul class="modal-products__ingredients-list ingredients-list">
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Milk</span
+        ><span class="ingredients-list__ingredient-count">150ml</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Juice</span
+        ><span class="ingredients-list__ingredient-count">50g</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Caramel</span
+        ><span class="ingredients-list__ingredient-count">20g</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Ice</span
+        ><span class="ingredients-list__ingredient-count">20g</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Sugar</span
+        ><span class="ingredients-list__ingredient-count">10g</span>
+      </li>
+      <li class="ingredients-list__item">
+        <span class="ingredients-list__ingredient-name">Jam</span
+        ><span class="ingredients-list__ingredient-count">20g</span>
       </li>
     </ul>
 
