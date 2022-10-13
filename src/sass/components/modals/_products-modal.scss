@@ -54,7 +54,6 @@
     fill: var(--yello-color);
   }
 
-
   @media screen and (min-width: 768px) {
     top: 20px;
   }
@@ -74,15 +73,40 @@
   width: 131px;
   height: 131px;
   border-radius: 50%;
-  background: linear-gradient(0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)),
-    #d9d9d9;
-  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 
   @media screen and (min-width: 768px) {
     margin: 24px auto 0;
   }
+}
+
+.modal-products__img-wrap--icecream {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.modal-products__img-wrap--ice-coffee {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.modal-products__img-wrap--milkshakes {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
 .modal-products__img {
@@ -112,7 +136,6 @@
   align-items: center;
   width: 53px;
   height: 72px;
-  border: 2px solid var(--calories-stroke-color);
   border-radius: 40px;
 
   @media screen and (min-width: 768px) {
@@ -121,17 +144,29 @@
   }
 }
 
+.components-list__item--icecream {
+  border: 2px solid var(--calories-stroke-color);
+}
+
+.components-list__item--ice-coffee {
+  border: 2px solid var(--ice-coffee-color);
+}
+
+.components-list__item--milkshakes {
+  border: 2px solid var(--milkshakes-color);
+}
+
 .components-list__circle {
+  position: relative;
+  top: -1px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 43px;
   height: 43px;
-  background: var(--calories-stroke-color);
-  border: 2px solid var(--calories-stroke-color);
-  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
   border-radius: 50%;
-  font-family: var(--montserrat);
+
   font-weight: 500;
   font-size: 10px;
   line-height: 2.8;
@@ -144,9 +179,26 @@
   }
 }
 
+.components-list__circle--icecream {
+  background-color: var(--calories-stroke-color);
+  border: 2px solid var(--calories-stroke-color);
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.components-list__circle--ice-coffee {
+  background-color: var(--ice-coffee-color);
+  border: 2px solid var(--ice-coffee-color);
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.components-list__circle--milkshakes {
+  background-color: var(--milkshakes-color);
+  border: 2px solid var(--milkshakes-color);
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
 .components-list__text {
   margin-top: 8px;
-  font-family: var(--montserrat);
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
@@ -161,7 +213,6 @@
   margin-top: 39px;
   margin-bottom: 24px;
   text-align: center;
-  font-family: var(--montserrat);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -175,7 +226,6 @@
 .ingredients-list__item {
   display: flex;
   justify-content: space-between;
-  font-family: var(--montserrat);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.76;
@@ -202,14 +252,11 @@
 .modal-products__input,
 .modal-products__comment {
   width: 100%;
-  font-family: var(--montserrat);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
   color: var(--main-black-color);
 }
-
-
 
 .modal-products__input {
   margin-bottom: 16px;
@@ -231,7 +278,6 @@
 
 .modal-products__btn {
   margin-top: 32px;
-  font-family: var(--montserrat);
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
