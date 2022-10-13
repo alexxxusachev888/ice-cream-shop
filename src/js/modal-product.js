@@ -13,8 +13,8 @@
 
 (() => {
   const openModalBtn = document.querySelector('[data-modal-products2-open]');
-  const closeModalBtn = document.querySelector('[data-modal-products-close]');
-  const modal = document.querySelector('[data-modal-products]');
+  const closeModalBtn = document.querySelector('[data-modal-products2-close]');
+  const modal = document.querySelector('[data-modal-products2]');
 
   openModalBtn.addEventListener('click', toggleModal);
   closeModalBtn.addEventListener('click', toggleModal);
@@ -26,8 +26,8 @@
 
 (() => {
   const openModalBtn = document.querySelector('[data-modal-products3-open]');
-  const closeModalBtn = document.querySelector('[data-modal-products-close]');
-  const modal = document.querySelector('[data-modal-products]');
+  const closeModalBtn = document.querySelector('[data-modal-products3-close]');
+  const modal = document.querySelector('[data-modal-products3]');
 
   openModalBtn.addEventListener('click', toggleModal);
   closeModalBtn.addEventListener('click', toggleModal);
