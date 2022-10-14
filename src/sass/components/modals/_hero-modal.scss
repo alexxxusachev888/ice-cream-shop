@@ -198,50 +198,36 @@
 
   &-cream {
     background-image: url('../images/hero-modal/ice-cream@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-modal/ice-cream@2x.png');
+    }
   }
 
   &-coffe {
     background-image: url('../images/hero-modal/ice-coffee@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-modal/ice-coffee@2x.png');
+    }
   }
 
   &-milk {
     background-image: url('../images/hero-modal/milk-shake@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-modal/milk-shake@2x.png');
+    }
   }
 
   background-repeat: no-repeat;
   background-size: cover;
-
-  @media screen and (min-width: 768px) {
-    &-cream {
-      background-image: url('../images/hero-modal/ice-cream@1x.png');
-
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/hero-modal/ice-cream@2x.png');
-      }
-    }
-
-    &-coffe {
-      background-image: url('../images/hero-modal/ice-coffee@1x.png');
-
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/hero-modal/ice-coffee@2x.png');
-      }
-    }
-
-    &-milk {
-      background-image: url('../images/hero-modal/milk-shake@1x.png');
-
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/hero-modal/milk-shake@2x.png');
-      }
-    }
-  }
 }
 
 // .img {
