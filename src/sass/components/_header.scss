@@ -8,8 +8,6 @@
 //   z-index: 999;
 // }
 
-
-
 .header__menu-list {
   display: none;
 }
@@ -258,7 +256,6 @@
   }
 }
 
-
 .wrapper-up {
   display: none;
 }
@@ -283,20 +280,25 @@
 
 .icon-up {
   fill: var(--yello-color);
-  opacity: 0.8;
+  opacity: 0.6;
 
   width: 30px;
   height: 30px;
 
   transition: fill var(--duration-cubic), opacity var(--duration-cubic);
+
+  .button-up:hover & {
+    fill: rgba(0, 128, 0, 1);
+    opacity: 1;
+  }
 }
 
 .button-up {
-
   display: flex;
   justify-content: center;
   align-items: center;
 
+  opacity: 0.6;
   position: absolute;
 
   background-color: var(--line-color);
@@ -304,8 +306,7 @@
   height: 50px;
   border-radius: 50%;
 
-  &:hover .icon-up {
-    fill: rgba(0, 128, 0, 1);
-    opacity: 0.8;
+  &:hover {
+    opacity: 1;
   }
 }

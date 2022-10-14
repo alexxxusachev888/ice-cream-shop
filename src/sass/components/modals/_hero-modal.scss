@@ -187,15 +187,17 @@
 
 .img {
   position: absolute;
-  top: -45%;
+  top: -40%;
+  // top: -45%;
   left: 0;
   display: block;
   border-radius: 50%;
   width: 132px;
   height: 131px;
+  transition: transform var(--duration-cubic);
 
   &-cream {
-    background-image: url('../images/hero-modal/ice-coffee@1x.png');
+    background-image: url('../images/hero-modal/ice-cream@1x.png');
   }
 
   &-coffe {
@@ -296,14 +298,17 @@
 
 .text-cream {
   border: 2px solid var(--ice-cream-color);
+  transition: background-color var(--duration-cubic);
 }
 
 .text-coffe {
   border: 2px solid var(--ice-coffee-color);
+  transition: background-color var(--duration-cubic);
 }
 
 .text-milk {
   border: 2px solid var(--milkshakes-color);
+  transition: background-color var(--duration-cubic);
 }
 
 .checkbox:checked + .text-cream {
@@ -316,6 +321,10 @@
 
 .checkbox:checked + .text-milk {
   background-color: var(--milkshakes-color);
+}
+
+.checkbox:checked ~ .img {
+  transform: translateY(-5%);
 }
 
 .modal__form-field {
