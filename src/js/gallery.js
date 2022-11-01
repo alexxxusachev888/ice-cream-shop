@@ -1,11 +1,11 @@
 $('.gallery__list').slick({
   dots: false,
   arrows: false,
-  speed: 300,
+  speed: 500,
   fade: true,
   cssEase: 'linear',
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   pauseOnFocus: true,
   pauseOnHover: true,
 });
