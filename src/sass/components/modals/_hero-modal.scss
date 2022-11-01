@@ -155,31 +155,25 @@
   height: 132px;
 
   &-cream {
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
+        rgba(156, 190, 143, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
 
   &-coffe {
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
+        rgba(248, 210, 78, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   }
 
   &-milk {
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
+        rgba(213, 117, 63, 0.7)),
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
@@ -200,8 +194,8 @@
     background-image: url('../images/hero-modal/ice-cream@1x.png');
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url('../images/hero-modal/ice-cream@2x.png');
     }
   }
@@ -210,8 +204,8 @@
     background-image: url('../images/hero-modal/ice-coffee@1x.png');
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url('../images/hero-modal/ice-coffee@2x.png');
     }
   }
@@ -220,8 +214,8 @@
     background-image: url('../images/hero-modal/milk-shake@1x.png');
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url('../images/hero-modal/milk-shake@2x.png');
     }
   }
@@ -297,23 +291,24 @@
   transition: background-color var(--duration-cubic);
 }
 
-.checkbox:checked + .text-cream {
+.checkbox:checked+.text-cream {
   background-color: var(--ice-cream-color);
 }
 
-.checkbox:checked + .text-coffe {
+.checkbox:checked+.text-coffe {
   background-color: var(--ice-coffee-color);
 }
 
-.checkbox:checked + .text-milk {
+.checkbox:checked+.text-milk {
   background-color: var(--milkshakes-color);
 }
 
-.checkbox:checked ~ .img {
+.checkbox:checked~.img {
   transform: translateY(-5%);
 }
 
 .modal__form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
