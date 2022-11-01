@@ -1,15 +1,11 @@
 # Ice Cream Shop Project
 
----
-
 This is a team project which was made after the module 'HTML/CSS' in the
 course - 'Full Stack Online' at IT School 'GoIt'.
 
 The main purpose of the project is to apply knowledge and skills in HTML and CSS
 (SASS) acquired through the module and get acquainted with Agile and Scrum
 methodologies and Git Workflow/GitHub.
-
----
 
 ## Used technologies
 
@@ -20,16 +16,12 @@ methodologies and Git Workflow/GitHub.
 - Animate.css library
 - SlickSlider
 
----
-
 ## Used associated tooling
 
 - Git
 - GitHub
 - VSCode
 - Figma
-
----
 
 ### Team
 
