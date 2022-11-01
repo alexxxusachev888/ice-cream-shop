@@ -300,6 +300,7 @@
 }
 
 .modal__form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,3 +389,11 @@
     background-color: var(--btn-hover-focus-color);
   }
 }
+
+// .modal-franchise__input:focus + .modal-franchise__desc,
+// .modal-franchise-input:not(:placeholder-shown) + .modal-franchise-desc {
+//   transform: translate(-65px, -50%);
+
+
+
+// }
